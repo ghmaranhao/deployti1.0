@@ -1,13 +1,13 @@
 # ==========================================
 # DEPLOY TI - PREFEITURA DE OLINDA
-# VERSÃO 1.0
+# VERSÃƒO 1.0
 # ==========================================
 
 Add-Type -AssemblyName System.Windows.Forms
 Add-Type -AssemblyName System.Drawing
 
 # ==========================================
-# FORMULÁRIO
+# FORMULÃRIO
 # ==========================================
 
 $form = New-Object System.Windows.Forms.Form
@@ -19,7 +19,7 @@ $form.ForeColor = "White"
 $form.Font = New-Object System.Drawing.Font("Segoe UI",10)
 
 # ==========================================
-# TÍTULO
+# TÃTULO
 # ==========================================
 
 $title = New-Object System.Windows.Forms.Label
@@ -169,10 +169,10 @@ $form.Controls.Add($txtIPImpressora)
 
 
 # ==========================================
-# DOM�NIO
+# DOMÍNIO
 # ==========================================
 
-New-Label "Usu�rio AD:" 40 450
+New-Label "Usuário AD:" 40 450
 
 $txtUser = New-Object System.Windows.Forms.TextBox
 $txtUser.Location = New-Object System.Drawing.Point(200,445)
@@ -305,7 +305,7 @@ $btnImplantar.Add_Click({
         Add-PrinterPort -Name "IP_$printerIP" -PrinterHostAddress $printerIP
 
         # ==========================================
-        # DOMÍNIO
+        # DOMÃNIO
         # ==========================================
 
         $securePassword = ConvertTo-SecureString $txtPass.Text -AsPlainText -Force
@@ -325,7 +325,7 @@ $btnImplantar.Add_Click({
         # ==========================================
 
         [System.Windows.Forms.MessageBox]::Show(
-            "Implantação concluída com sucesso.`nO computador será reiniciado.",
+            "ImplantaÃ§Ã£o concluÃ­da com sucesso.`nO computador serÃ¡ reiniciado.",
             "SUCESSO"
         )
 
