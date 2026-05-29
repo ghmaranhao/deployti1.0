@@ -60,6 +60,7 @@ O sistema instala automaticamente:
 - LibreOffice
 - Google Drive
 
+![Softwares](./image.png)
 --------------------------------------------------
 
 # Active Directory
@@ -97,6 +98,7 @@ Compatível com impressoras:
 
 # Estrutura do Projeto
 
+```
 DEPLOY-TI/
 │
 ├── DeployTI.ps1
@@ -109,7 +111,7 @@ DEPLOY-TI/
 │   ├── LibreOffice.msi
 │   ├── GoogleDriveSetup.exe
 │   └── GLPI-Agent-1.7.1-x64.msi
-
+```
 --------------------------------------------------
 
 # Como usar
@@ -279,4 +281,4 @@ Recomenda-se sempre testar em ambiente de homologação antes de utilizar em pro
 
 # Licença
 
-Projeto de uso educacional e corporativo.
+[Projeto de uso educacional e corporativo.](./LICENSE)
