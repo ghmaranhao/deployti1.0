@@ -1,13 +1,13 @@
 # ==========================================
 # DEPLOY TI - PREFEITURA DE OLINDA
-# VERSAO 1.0
+# VERSÃO 1.0
 # ==========================================
 
 Add-Type -AssemblyName System.Windows.Forms
 Add-Type -AssemblyName System.Drawing
 
 # ==========================================
-# FORMULARIO
+# FORMULÁRIO
 # ==========================================
 
 $form = New-Object System.Windows.Forms.Form
@@ -19,7 +19,7 @@ $form.ForeColor = "White"
 $form.Font = New-Object System.Drawing.Font("Segoe UI",10)
 
 # ==========================================
-# TITULO
+# TÍTULO
 # ==========================================
 
 $title = New-Object System.Windows.Forms.Label
@@ -169,10 +169,10 @@ $form.Controls.Add($txtIPImpressora)
 
 
 # ==========================================
-# DOMÍNIO
+# DOM�NIO
 # ==========================================
 
-New-Label "Usuário AD:" 40 450
+New-Label "Usu�rio AD:" 40 450
 
 $txtUser = New-Object System.Windows.Forms.TextBox
 $txtUser.Location = New-Object System.Drawing.Point(200,445)
@@ -193,18 +193,19 @@ $form.Controls.Add($txtPass)
 # ==========================================
 
 $lblNome = New-Object System.Windows.Forms.Label
-$lblNome.Location = New-Object System.Drawing.Point(40,500)
+$lblNome.Location = New-Object System.Drawing.Point(40,560)
 $lblNome.Size = New-Object System.Drawing.Size(600,30)
-$lblNome.Font = New-Object System.Drawing.Font("Segoe UI",12,[System.Drawing.FontStyle]::Bold)
+$lblNome.Font = New-Object System.Drawing.Font("Segoe UI",11)
+$lblNome.Text = "Nome gerado:"
 $form.Controls.Add($lblNome)
 
 # ==========================================
-# BOTÃO GERAR
+# BOTAO GERAR
 # ==========================================
 
 $btnGerar = New-Object System.Windows.Forms.Button
 $btnGerar.Text = "GERAR NOME"
-$btnGerar.Location = New-Object System.Drawing.Point(500,85)
+$btnGerar.Location = New-Object System.Drawing.Point(500,100)
 $btnGerar.Size = New-Object System.Drawing.Size(140,40)
 $form.Controls.Add($btnGerar)
 
@@ -228,7 +229,7 @@ $btnGerar.Add_Click({
 })
 
 # ==========================================
-# BOTÃO IMPLANTAR
+# BOTAOO IMPLANTAR
 # ==========================================
 
 $btnImplantar = New-Object System.Windows.Forms.Button
@@ -304,7 +305,7 @@ $btnImplantar.Add_Click({
         Add-PrinterPort -Name "IP_$printerIP" -PrinterHostAddress $printerIP
 
         # ==========================================
-        # DOMINIO
+        # DOMÍNIO
         # ==========================================
 
         $securePassword = ConvertTo-SecureString $txtPass.Text -AsPlainText -Force
@@ -324,7 +325,7 @@ $btnImplantar.Add_Click({
         # ==========================================
 
         [System.Windows.Forms.MessageBox]::Show(
-            "ImplantaÃ§Ã£o concluÃ­da com sucesso.`nO computador serÃ¡ reiniciado.",
+            "Implantação concluída com sucesso.`nO computador será reiniciado.",
             "SUCESSO"
         )
 
