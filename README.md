@@ -1,5 +1,9 @@
 # DeployTI
 
+[![Licence](https://img.shields.io/github/license/Ileriayo/markdown-badges?style=for-the-badge)](./LICENSE)
+![PowerShell](https://img.shields.io/badge/PowerShell-%235391FE.svg?style=for-the-badge&logo=powershell&logoColor=white)
+![Version](https://img.shields.io/badge/v1.0.0-FCD535?style=for-the-badge)
+
 Sistema de implantação automatizada para computadores Windows utilizando PowerShell e Provisioning Package (.ppkg).
 
 O objetivo do projeto é padronizar a preparação de computadores em ambientes públicos, corporativos e empresariais, automatizando tarefas como:
